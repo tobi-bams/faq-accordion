@@ -113,80 +113,60 @@ main{
     padding-right: 2em;
 }
 
+@media(min-width: 1200px){
+    .Container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 80em;
+        height: 49em;
+        padding-bottom: 0;
+    }
 
-/* .Container{
-    display: flex;
-    width: 80em;
-    height: 48em;
-    background-color: white;
-    border-radius: 2em;
-    justify-content: center;
-    align-items: center;
+    .faqImage{
+        display: flex;
+        margin-right: 8em;
+        background-image: url("../images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: right 70%;
+        background-size: auto;
+        height: 49em;
+        width: 50%;
+    }
+
+    .faqImage::before{
+        content: url("../images/illustration-box-desktop.svg");
+        position: absolute;
+        left: -7.78em;
+        margin-top: 4em;
+        max-width: 100%;
+    }
+
+    .imageContainer{
+        overflow: hidden;
+        height: 100%;
+    }
+
+    #womanOnline{
+        margin-left: -6.7em;
+        content: url("../images/illustration-woman-online-desktop.svg");
+        margin-top: 0;
+    }
+
+    .questions{
+        display: flex;
+        flex-direction: column;
+        margin-right: 8em;
+        width: 50%;
+    }
+
+    .questions h1{
+        text-align: left;
+    }
+
+    .qa{
+        display: flex;
+    }
 }
-
-.faqImage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-right: 8em;
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: right 70%;
-    height: 48em;
-}
-
-
-#llustrationBox{
-    position: absolute;
-    left: -7.78em;
-    margin-top: 4em;
-    max-width: 100%;
-}
-
-.imageContainer{
-    overflow: hidden;
-}
-
-#womanOnline{
-    margin-left: -6.7em;
-    
-}
-
-.questions{
-    display: flex;
-    flex-direction: column;
-    margin-right: 8em;
-    width: 50%;
-}
-
-.qa{
-    display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid hsl(240, 5%, 91%);
-    height: auto;
-    transition: 2s height ease-in-out 1s;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.title img{
-    transition: 0.2s transform ease-out;
-}
-
-.question{
-    margin: 1em 0;
-    font-size: 14px;
-    cursor: pointer;
-    color: hsl(238, 29%, 16%);
-}
-
-.answers{
-    margin-bottom: 1em;
-    display: none;
-    color: hsl(240, 6%, 50%);
-} */
