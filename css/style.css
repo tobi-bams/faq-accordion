@@ -6,6 +6,7 @@ body{
     height: 100vh;
     font-size: 12px;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 h1,p{
@@ -32,11 +33,12 @@ main{
     background-color: white;
     margin-left: 2em;
     margin-right: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 2em;
     border-radius: 2em;
     height: 45em;
+    margin-top: 5.5em;
 }
 
 .faqImage{
@@ -75,15 +77,13 @@ main{
 .questions h1{
     text-align: center;
     font-size: 3em;
+    color: hsl(238, 29%, 16%);
 }
 
 .qa{
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid hsl(240, 5%, 91%);
-    height: auto;
-    transition: 2s height ease-in-out 1s;
-    
 }
 
 .title{
@@ -97,18 +97,22 @@ main{
 }
 
 .question{
-    margin: 1em 0;
-    font-size: 14px;
+    margin: 0.7em 0;
+    font-size: 13px;
     cursor: pointer;
     color: hsl(238, 29%, 16%);
 }
 
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
 .answers{
     margin-bottom: 1em;
     display: none;
     color: hsl(240, 6%, 50%);
     padding-right: 2em;
 }
+
 
 /* .Container{
     display: flex;
@@ -181,9 +185,6 @@ main{
     color: hsl(238, 29%, 16%);
 }
 
-.question:hover{
-    color: hsl(14, 88%, 65%);
-}
 .answers{
     margin-bottom: 1em;
     display: none;
