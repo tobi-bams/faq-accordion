@@ -1,7 +1,4 @@
 let questions = document.querySelectorAll(".question");
-// let me = document.getElementById("me");
-
-// me.style.fontWeight = "700"
 
 
 questions.forEach((question) => {
